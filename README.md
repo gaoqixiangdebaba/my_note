@@ -18,7 +18,22 @@
 
 ## 安装
 
-### 方式一：从 GitHub 安装（推荐）
+### 方式一：Copilot 插件一键安装（最简单）
+
+1. 打开 VS Code，按 `Ctrl+Shift+P` 打开命令面板
+2. 搜索并运行 `Chat: Install Plugin From Source`
+3. 输入仓库 URL：
+
+```
+https://github.com/gaoqixiangdebaba/my_note
+```
+
+4. VS Code 自动克隆仓库并安装插件
+5. 在 Copilot Chat 中即可直接使用所有工具
+
+> **前提**：本机已安装 Node.js 18+。首次运行时插件会自动安装依赖。
+
+### 方式二：从 GitHub 安装（npx）
 
 在 VS Code 工作区创建 `.vscode/mcp.json`：
 
@@ -35,7 +50,7 @@
 
 > **前提**：本机已安装 Node.js 18+（含 npx）。无需其他依赖。
 
-### 方式二：本地安装
+### 方式三：本地安装
 
 ```bash
 git clone https://github.com/gaoqixiangdebaba/my_note.git
