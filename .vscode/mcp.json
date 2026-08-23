@@ -1,8 +1,8 @@
 {
   "servers": {
     "dev-notes": {
-      "command": "npx",
-      "args": ["-y", "dev-notes-mcp"]
+      "command": "node",
+      "args": ["${workspaceFolder}/start-mcp.cjs"]
     }
   }
 }
