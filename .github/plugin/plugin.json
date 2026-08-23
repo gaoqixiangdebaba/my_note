@@ -1,0 +1,9 @@
+{
+  "name": "dev-notes-mcp",
+  "displayName": "Dev Notes MCP",
+  "description": "开发笔记管理工具 - 自动解析文本并分类为笔记/问题/待办任务，支持 Copilot 对话中查询和 Dashboard 可视化界面",
+  "version": "1.0.0",
+  "publisher": "gaoqixiangdebaba",
+  "categories": ["productivity", "chat"],
+  "keywords": ["mcp", "notes", "todo", "tasks", "questions"]
+}
