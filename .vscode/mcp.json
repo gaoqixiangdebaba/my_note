@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "dev-notes": {
+      "command": "npx",
+      "args": ["-y", "dev-notes-mcp"]
+    }
+  }
+}

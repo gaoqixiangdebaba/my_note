@@ -1,0 +1,41 @@
+{
+  "name": "dev-notes-mcp",
+  "version": "1.0.0",
+  "description": "Dev Notes MCP Server - parse, categorize and track notes, questions and tasks for GitHub Copilot",
+  "type": "module",
+  "bin": {
+    "dev-notes-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "dashboard": "node dist/index.js --dashboard",
+    "prepare": "node -e \"try{require('child_process').execSync('npx tsc',{stdio:'inherit'})}catch{}\""
+  },
+  "keywords": [
+    "mcp",
+    "notes",
+    "todo",
+    "questions",
+    "copilot",
+    "github-copilot",
+    "task-management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
