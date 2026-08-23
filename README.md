@@ -18,7 +18,7 @@
 
 ## 安装
 
-### 方式一：npm 安装（推荐）
+### 方式一：从 GitHub 安装（推荐）
 
 在 VS Code 工作区创建 `.vscode/mcp.json`：
 
@@ -27,30 +27,19 @@
   "servers": {
     "dev-notes": {
       "command": "npx",
-      "args": ["-y", "dev-notes-mcp"]
+      "args": ["-y", "github:gaoqixiangdebaba/my_note"]
     }
   }
 }
 ```
 
-### 方式二：从 GitHub 安装
+> **前提**：本机已安装 Node.js 18+（含 npx）。无需其他依赖。
 
-```json
-{
-  "servers": {
-    "dev-notes": {
-      "command": "npx",
-      "args": ["-y", "github:你的用户名/dev-notes-mcp"]
-    }
-  }
-}
-```
-
-### 方式三：本地安装
+### 方式二：本地安装
 
 ```bash
-git clone https://github.com/你的用户名/dev-notes-mcp.git
-cd dev-notes-mcp
+git clone https://github.com/gaoqixiangdebaba/my_note.git
+cd my_note
 npm install && npm run build
 ```
 
@@ -174,13 +163,13 @@ HTTP状态码 200=成功
 
 ```bash
 # 方式一：npx（无需安装）
-npx dev-notes-mcp --dashboard
+npx github:gaoqixiangdebaba/my_note --dashboard
 
 # 方式二：本地运行
 npm run dashboard
 
 # 指定端口
-npx dev-notes-mcp --dashboard --port 8080
+npx github:gaoqixiangdebaba/my_note --dashboard --port 8080
 ```
 
 启动后自动打开浏览器，访问 `http://localhost:3456`。
