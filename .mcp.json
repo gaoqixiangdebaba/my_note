@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dev-notes": {
+      "command": "node",
+      "args": ["./start-mcp.cjs"]
+    }
+  }
+}
